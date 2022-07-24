@@ -12,14 +12,13 @@ spec:
   selector:
     matchLabels:
       app: cicd-demo
-      version: v1
   template:
     metadata:
       labels:
         app: cicd-demo
     spec:
       containers:
-        - image: 571661174237.dkr.ecr.us-east-1.amazonaws.com/sampleimage:v1
+        - image: 120717539064.dkr.ecr.us-west-2.amazonaws.com/cicd-demo:latest
           imagePullPolicy: Always
           name: cicd-demo
           ports:
